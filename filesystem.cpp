@@ -63,7 +63,7 @@ int main()
     std::ofstream("newfile.txt").put('1');
     fs::create_directory("dir");
     fs::copy_file("./newfile.txt","dir/newfile2.txt");
-    std::cout<<std::ifstream("dir/newfile.txt").rdbuf()<<std::endl;
+    std::cout<<std::ifstream("dir/newfile2.txt").rdbuf()<<std::endl;
     fs::create_directory("dir/a");
     try{
         fs::copy_file("dir/a","dir/b");
